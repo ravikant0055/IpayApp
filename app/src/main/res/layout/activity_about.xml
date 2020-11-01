@@ -23,7 +23,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="About text"
+            android:text="About us"
             android:textColor="#005FFF"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -156,7 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="96dp"
                     android:layout_marginLeft="5dp"
-                    android:src="@drawable/Ravikant"
+                    android:src="@drawable/ravikant"
                     app:civ_border_color="#005FFF"
                     app:civ_border_width="2dp" />
 
