@@ -33,11 +33,12 @@
 
         <ImageView
             android:id="@+id/aboutbtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            app:srcCompat="@drawable/menu" />
+            app:srcCompat="@drawable/ic_information"
+            android:layout_marginRight="16dp"/>
     </LinearLayout>
 
     <TextView
@@ -85,7 +86,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="BigBazaar"
+                android:text="B-Bazaar"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />

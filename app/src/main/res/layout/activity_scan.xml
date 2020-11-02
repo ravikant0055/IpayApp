@@ -35,11 +35,11 @@
 
         <ImageView
             android:id="@+id/aboutbtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            app:srcCompat="@drawable/menu" />
+            app:srcCompat="@drawable/ic_information" />
     </LinearLayout>
 
     <ImageView
