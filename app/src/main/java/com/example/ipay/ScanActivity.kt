@@ -6,11 +6,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.zxing.integration.android.IntentIntegrator
 
 class ScanActivity : AppCompatActivity() {
     lateinit var scanbtn:Button
+    lateinit var aboutbtn: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan)
@@ -22,6 +24,11 @@ class ScanActivity : AppCompatActivity() {
             scanner.setPrompt("Scan a barcode")
             scanner.setBarcodeImageEnabled(true)
             scanner.initiateScan()
+        }
+        aboutbtn=findViewById(R.id.aboutbtn)
+        aboutbtn.setOnClickListener {
+            startActivity(Intent(this@ScanActivity,AboutActivity::class.java))
+            finish()
         }
     }
 
