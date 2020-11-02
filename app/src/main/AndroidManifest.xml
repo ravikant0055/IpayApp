@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.ipay"
-    >
+    package="com.example.ipay">
+
     <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,26 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ListActivity"></activity>
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
-        <activity android:name=".AboutActivity"
-            android:theme="@style/SplashTheme"></activity>
-        <activity android:name=".ScanActivity"
-            android:theme="@style/SplashTheme"></activity>
-        <activity android:name=".SplashActivity"
-            android:theme="@style/SplashTheme"
-            android:noHistory="true">
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".ScanActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PairActivity"
-            android:theme="@style/SplashTheme">
-        </activity>
+        <activity
+            android:name=".PairActivity"
+            android:theme="@style/SplashTheme"></activity>
     </application>
 
 </manifest>
