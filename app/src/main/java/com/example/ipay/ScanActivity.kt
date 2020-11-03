@@ -21,7 +21,7 @@ class ScanActivity : AppCompatActivity() {
             val scanner=IntentIntegrator(this)
             scanner.setDesiredBarcodeFormats(IntentIntegrator.ONE_D_CODE_TYPES)
             scanner.setBeepEnabled(false)
-            scanner.setPrompt("Scan a barcode")
+            scanner.setPrompt("Scan barcode")
             scanner.setBarcodeImageEnabled(true)
             scanner.initiateScan()
         }
