@@ -36,7 +36,8 @@
             android:text="@string/paragraph"
             android:textColor="#4E4E4E"
             android:textSize="24sp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/team"
