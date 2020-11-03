@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="160dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/share" />
+            android:src="@drawable/share" />
 
         <ImageView
             android:id="@+id/aboutbtn"
@@ -37,7 +37,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_information"
+            android:src="@drawable/ic_information"
             android:layout_marginRight="16dp"/>
     </LinearLayout>
 

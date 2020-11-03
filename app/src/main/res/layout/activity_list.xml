@@ -72,7 +72,7 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="meggie"
+            android:text="maggie"
             android:textSize="20sp" />
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_width="10dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/delete" />
+            android:src="@drawable/delete" />
     </LinearLayout>
 
     <Button

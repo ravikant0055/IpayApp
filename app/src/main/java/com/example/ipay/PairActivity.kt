@@ -5,23 +5,52 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import kotlinx.android.synthetic.main.activity_pair.*
 
 class PairActivity : AppCompatActivity() {
-    lateinit var aboutbtn:ImageView
-    lateinit var bbfimage:ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pair)
-        aboutbtn=findViewById(R.id.aboutbtn)
-        bbfimage=findViewById(R.id.bbfimg)
+
         aboutbtn.setOnClickListener {
             startActivity(Intent(this@PairActivity,AboutActivity::class.java))
-            finish()
+
         }
-        bbfimage.setOnClickListener {
+        bbfimg.setOnClickListener {
             startActivity(Intent(this@PairActivity,ScanActivity::class.java))
-            finish()
+
         }
+        vimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+        easyimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+        globusimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+        lifeimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+
+        maximg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+        ssimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+        trendsimg.setOnClickListener {
+            startActivity(Intent(this@PairActivity,ScanActivity::class.java))
+
+        }
+
     }
 
 

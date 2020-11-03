@@ -41,6 +41,7 @@ class ScanActivity : AppCompatActivity() {
                     Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
+                    startActivity(Intent(this,ListActivity::class.java))
                 }
             } else {
                 super.onActivityResult(requestCode, resultCode, data);
