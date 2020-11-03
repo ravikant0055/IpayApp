@@ -315,17 +315,17 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/pairbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/whitebtn"
-        android:fontFamily="sans-serif-medium"
-        android:paddingBottom="9dp"
-        android:text="Pair"
-        android:textSize="30sp" />
+<!--    <Button-->
+<!--        android:id="@+id/pairbtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:background="@drawable/whitebtn"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:paddingBottom="9dp"-->
+<!--        android:text="Pair"-->
+<!--        android:textSize="30sp" />-->
 
 </LinearLayout>
