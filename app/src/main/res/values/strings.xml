@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Ipay</string>
-    <string name="paragraph">This is a Mobile application named Upay (Intelligence Payment).This application is for a particular departmental store.People will be able to Scan their products, Create a price list and Pay their bills online instead of wasting their times at the billing counters. We intend to save your time from waiting in long queues even if we have fewer items in our carts.</string>
+    <string name="paragraph">This is a Mobile application named Ipay (Intelligence Payment).This application is for a particular departmental store.People will be able to Scan their products, Create a price list and Pay their bills online instead of wasting their times at the billing counters. We intend to save your time from waiting in long queues even if we have fewer items in our carts.</string>
 </resources>
