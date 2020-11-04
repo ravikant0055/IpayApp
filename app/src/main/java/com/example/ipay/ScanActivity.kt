@@ -48,8 +48,9 @@ class ScanActivity : AppCompatActivity() {
                 if(result.getContents() == null) {
                     Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
                 } else {
-                    val price:String = "10"
-                    val product:String = result.getContents().toString()
+                    val price:String = "35"
+//                    val product:String = result.getContents().toString()
+                    val product:String="Freemind Notebook"
                     Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
 
                     intent = Intent(this, ListActivity::class.java)
