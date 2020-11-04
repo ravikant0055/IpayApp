@@ -8,13 +8,18 @@ import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_pair.*
 
 class PairActivity : AppCompatActivity() {
-
+    lateinit var quesbtn:ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pair)
 
         aboutbtn.setOnClickListener {
             startActivity(Intent(this@PairActivity,AboutActivity::class.java))
+
+        }
+        quesbtn=findViewById(R.id.quesbtn)
+        quesbtn.setOnClickListener {
+            startActivity(Intent(this@PairActivity,GuideActivity::class.java))
 
         }
         bbfimg.setOnClickListener {

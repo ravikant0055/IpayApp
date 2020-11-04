@@ -12,10 +12,13 @@ import com.google.zxing.integration.android.IntentIntegrator
 
 class ScanActivity : AppCompatActivity() {
     lateinit var scanbtn:Button
+    lateinit var quesbtn:ImageView
     lateinit var aboutbtn: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan)
+
+
         scanbtn=findViewById(R.id.scanbtn)
         scanbtn.setOnClickListener {
             val scanner=IntentIntegrator(this)
@@ -24,6 +27,11 @@ class ScanActivity : AppCompatActivity() {
             scanner.setPrompt("Scan barcode")
             scanner.setBarcodeImageEnabled(true)
             scanner.initiateScan()
+        }
+        quesbtn=findViewById(R.id.quesbtn)
+        quesbtn.setOnClickListener {
+            startActivity(Intent(this@ScanActivity,GuideActivity::class.java))
+            finish()
         }
         aboutbtn=findViewById(R.id.aboutbtn)
         aboutbtn.setOnClickListener {
@@ -40,8 +48,15 @@ class ScanActivity : AppCompatActivity() {
                 if(result.getContents() == null) {
                     Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
                 } else {
+                    val price:String = "10"
+                    val product:String = result.getContents().toString()
                     Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
-                    startActivity(Intent(this,ListActivity::class.java))
+
+                    intent = Intent(this, ListActivity::class.java)
+                    intent.putExtra("name", price)
+                    intent.putExtra("thing", product)
+                    startActivity(intent)
+
                 }
             } else {
                 super.onActivityResult(requestCode, resultCode, data);

@@ -24,13 +24,13 @@
             android:src="@drawable/logo" />
 
         <ImageView
-            android:id="@+id/sharebtn"
-            android:layout_width="50dp"
+            android:id="@+id/quesbtn"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginLeft="160dp"
             android:layout_weight="1"
-            android:src="@drawable/share" />
+            android:src="@drawable/ic_question"/>
 
         <ImageView
             android:id="@+id/aboutbtn"
@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_information" />
+            android:src="@drawable/ic_information"/>
     </LinearLayout>
 
     <TextView
