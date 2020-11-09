@@ -49,48 +49,9 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="1"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="maggie"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="10"
-            android:textSize="20sp" />
-
-        <ImageView
-            android:id="@+id/deletebtn"
-            android:layout_width="10dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/delete" />
-    </LinearLayout>
+        android:layout_height="400dp" />
 
     <Button
         android:id="@+id/btnadd"
@@ -115,7 +76,7 @@
         android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/round_corner"
         android:text="Continue"
         android:textColor="#fff"
