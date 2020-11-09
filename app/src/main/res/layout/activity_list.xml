@@ -51,7 +51,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="400dp"
+        android:id="@+id/itemlistview"
+        tools:listitem="@layout/additem"
+        />
 
     <Button
         android:id="@+id/btnadd"
