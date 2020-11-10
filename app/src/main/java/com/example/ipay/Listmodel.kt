@@ -1,3 +1,8 @@
 package com.example.ipay
 
-class Listmodel(var id:String, var Description:String, var Price:String)
+class Listmodel(val itemid:String,
+                val description:String,
+                val price:String,
+                val deletebtn:Int){
+
+}

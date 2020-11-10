@@ -1,5 +1,4 @@
 package com.example.ipay
-
 import android.app.Activity
 import android.app.Activity.*
 import android.content.Intent
@@ -7,14 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import com.google.zxing.integration.android.IntentIntegrator
 
-class ScanActivity : AppCompatActivity() {
+class ScanActivity : AppCompatActivity(){
     lateinit var scanbtn:Button
     lateinit var quesbtn:ImageView
     lateinit var aboutbtn: ImageView
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private var parentLinearLayout: LinearLayout? = null
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan)
 
