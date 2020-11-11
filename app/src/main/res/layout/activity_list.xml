@@ -52,11 +52,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/itemlistview"
+        android:id="@+id/recycler_view"
         tools:listitem="@layout/additem"
-        >
+        />
 
-    </androidx.recyclerview.widget.RecyclerView>
+
 
     <Button
         android:id="@+id/btnadd"
