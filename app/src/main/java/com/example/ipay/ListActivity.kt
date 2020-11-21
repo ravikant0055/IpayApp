@@ -4,6 +4,7 @@ import android.content.Intent
 import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.util.Log
 
 import kotlinx.android.synthetic.main.activity_list.*
@@ -18,6 +19,7 @@ import kotlinx.android.synthetic.main.additem.*
 class ListActivity : AppCompatActivity() {
 
     lateinit var btnadd: Button
+     companion object{var arrayList=ArrayList<ListModel>()}
 //    lateinit var textView11:TextView
 //    lateinit var textView12:TextView
 
@@ -34,9 +36,8 @@ class ListActivity : AppCompatActivity() {
         val thing = bundle?.get("thing")
 //        textView11.text= thing as CharSequence?
 //        textView12.text= price as CharSequence?
-        val arrayList=ArrayList<ListModel>()
+
         arrayList.add(ListModel("1", thing as String, price as String,R.drawable.delete))
-        //arrayList.add(ListModel("1", thing , price,R.drawable.delete))
         val myAdapter=ListAdapter(arrayList,this)
         recycler_view.layoutManager=LinearLayoutManager(this)
         recycler_view.adapter=myAdapter
@@ -46,5 +47,6 @@ class ListActivity : AppCompatActivity() {
         }
 
     }
+
 
 }
