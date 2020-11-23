@@ -17,10 +17,10 @@ class ListAdapter(val arrayList: ArrayList<ListModel>,val context: Context,val o
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var btn_pay : Button = itemView.paybtn
         fun bindItems(model: ListModel){
-        itemView.itemidd.text=model.itemid
-        itemView.descrip.text=model.description
-        itemView.pricess.text=model.price
-        itemView.deletebtnnn.setImageResource(model.deletebtn)
+        itemView.itemid.text=model.itemid
+        itemView.description.text=model.description
+        itemView.price.text=model.price
+        itemView.deletebtn.setImageResource(model.deletebtn)
     }
     }
 
