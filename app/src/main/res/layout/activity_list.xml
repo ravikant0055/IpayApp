@@ -75,6 +75,13 @@
         android:text=" Add more"
         android:textColor="#ffff"
         android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalView"
+        android:text="Total"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
 
     <Button
         android:id="@+id/btnsub"

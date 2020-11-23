@@ -19,7 +19,10 @@ import kotlinx.android.synthetic.main.additem.*
 class ListActivity : AppCompatActivity() {
 
     lateinit var btnadd: Button
-     companion object{var arrayList=ArrayList<ListModel>()}
+     companion object{
+         var arrayList=ArrayList<ListModel>()
+         var total:Int=0;
+     }
 //    lateinit var textView11:TextView
 //    lateinit var textView12:TextView
 
@@ -41,6 +44,9 @@ class ListActivity : AppCompatActivity() {
         val myAdapter=ListAdapter(arrayList,this)
         recycler_view.layoutManager=LinearLayoutManager(this)
         recycler_view.adapter=myAdapter
+
+        total=total+price.toInt();
+        totalView.setText(total.toString())
 
         btnadd.setOnClickListener {
             startActivity(Intent(this,ScanActivity::class.java))
