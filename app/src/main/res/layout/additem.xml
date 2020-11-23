@@ -9,7 +9,7 @@
     android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/itemid"
+            android:id="@+id/itemidd"
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -18,7 +18,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/descrip"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -28,7 +28,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/price"
+            android:id="@+id/pricess"
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -36,8 +36,9 @@
             android:text="10"
             android:textSize="20sp" />
 
+
         <ImageView
-            android:id="@+id/deletebtn"
+            android:id="@+id/deletebtnnn"
             android:layout_width="10dp"
             android:layout_height="40dp"
             android:layout_weight="1"
