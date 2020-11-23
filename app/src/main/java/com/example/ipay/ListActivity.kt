@@ -42,7 +42,7 @@ class ListActivity : AppCompatActivity(),OnClickLIstener,PaymentResultListener {
 //        textView12.text= price as CharSequence?
 
         arrayList.add(ListModel("1", thing as String, price as String,R.drawable.delete))
-        val myAdapter=ListAdapter(arrayList,this)
+        val myAdapter=ListAdapter(arrayList, applicationContext as ListActivity,this)
         recycler_view.layoutManager=LinearLayoutManager(this)
         recycler_view.adapter=myAdapter
 
