@@ -1,29 +1,25 @@
 package com.example.ipay
 
 import android.content.Intent
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
-import android.util.Log
 
 import kotlinx.android.synthetic.main.activity_list.*
 
 import android.widget.Button
-import android.widget.ListAdapter
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.razorpay.Checkout
 import com.razorpay.PaymentResultListener
-import kotlinx.android.synthetic.main.additem.*
 import org.json.JSONObject
 
 class ListActivity : AppCompatActivity(),OnClickLIstener,PaymentResultListener {
 
     lateinit var btnadd: Button
-     companion object{var arrayList=ArrayList<ListModel>()}
+     companion object{
+         var arrayList=ArrayList<ListModel>()
+         var total:Int=0
+     }
 //    lateinit var textView11:TextView
 //    lateinit var textView12:TextView
 
@@ -42,9 +38,10 @@ class ListActivity : AppCompatActivity(),OnClickLIstener,PaymentResultListener {
 //        textView12.text= price as CharSequence?
 
         arrayList.add(ListModel("1", thing as String, price as String,R.drawable.delete))
-        val myAdapter=ListAdapter(arrayList, applicationContext as ListActivity,this)
+        val myAdapter=ListAdapter(arrayList, applicationContext,this)
         recycler_view.layoutManager=LinearLayoutManager(this)
         recycler_view.adapter=myAdapter
+        totalView.setText((total+price.toInt()).toString())
 
         btnadd.setOnClickListener {
             startActivity(Intent(this,ScanActivity::class.java))

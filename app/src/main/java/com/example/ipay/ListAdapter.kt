@@ -1,5 +1,6 @@
 package com.example.ipay
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +9,9 @@ import kotlinx.android.synthetic.main.activity_list.view.*
 import kotlinx.android.synthetic.main.additem.view.*
 
 class ListAdapter(
-    val arrayList:ArrayList<ListModel>,
-    val context: ListActivity,
-    val onClickLIstener: OnClickLIstener
+    private val arrayList:ArrayList<ListModel>,
+    val context: Context,
+    private val onClickLIstener: OnClickLIstener
 
 ):
     RecyclerView.Adapter<ListAdapter.ViewHolder>() {
