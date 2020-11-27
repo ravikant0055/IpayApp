@@ -10,13 +10,12 @@ import kotlinx.android.synthetic.main.additem.view.*
 
 class ListAdapter(
     private val arrayList:ArrayList<ListModel>,
-    val context: Context,
-    private val onClickLIstener: OnClickLIstener
+    val context: Context
+
 
 ):
     RecyclerView.Adapter<ListAdapter.ViewHolder>() {
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        var btn_pay = itemView.paybtn;
         fun bindItems(model: ListModel){
             itemView.itemid.text=model.itemid
             itemView.description.text=model.description
@@ -36,8 +35,6 @@ class ListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(arrayList[position])
-        holder.btn_pay.setOnClickListener {
-            onClickLIstener.onItemClick(arrayList[position])
-        }
+
     }
 }
