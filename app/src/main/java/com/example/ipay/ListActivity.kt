@@ -7,7 +7,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_list.*
 
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
